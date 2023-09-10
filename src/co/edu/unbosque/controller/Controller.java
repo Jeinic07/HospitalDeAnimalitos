@@ -9,7 +9,7 @@ import co.edu.unbosque.persistence.CobijaDAO;
 import co.edu.unbosque.view.Console;
 
 public class Controller {
-
+// Por: Jeisson Nicolas Uyaban y Javier Felipe Meza
 	private Console c;
 	private Random r;
 	private int numCobijas;
@@ -21,7 +21,7 @@ public class Controller {
 		r = new Random();
 		adao = new AnimalDAO();
 		cdao = new CobijaDAO();
-		numCobijas = r.nextInt(40 - 20 + 1) + 25;
+		numCobijas = r.nextInt(40 - 20 + 1) + 20;
 
 	}
 
@@ -30,7 +30,7 @@ public class Controller {
 		cicloprincipal: while (true) {
 			c.imprimirConSalto("Numero de cobijas disponibles actual: " + numCobijas);
 			c.imprimirConSalto(
-					"Bienvenido al hospital de animalitos, elija una de las opciones a realizar\n2) Mostrar los animalitos actuales registrados\n3) Mostrar las cobijas ocupadas por animalitos\n4) Salir :(");
+					"Bienvenido al hospital de animalitos, elija una de las opciones a realizar\n1) Registrar entrada de animali\n2) Mostrar los animalitos actuales registrados\n3) Mostrar las cobijas ocupadas por animalitos\n4) Salir :(");
 
 			String temp = c.leerLineaEntera();
 
