@@ -39,7 +39,7 @@ public class QueueImpl<E> implements Queue<E> {
 
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("Back [");
+		sb.append("Animales: \n");
 		DNode<E> aux = infos.getHead();
 
 		for (int i = 0; i < infos.getSize(); i++) {
@@ -47,11 +47,9 @@ public class QueueImpl<E> implements Queue<E> {
 			if (aux == infos.getTail()) {
 				break;
 			}
-			sb.append(" <-> ");
+			sb.append("\n");
 			aux = aux.getNext();
 		}
-
-		sb.append("] Front");
 
 		return sb.toString();
 	}
