@@ -37,7 +37,7 @@ public class StackImpl<E> implements Stack<E>{
 
 		StringBuilder sb = new StringBuilder();
 
-		sb.append("Top [");
+		sb.append("Cobijas: \n");
 		DNode<E> aux = infos.getHead();
 
 		for (int i = 0; i < infos.getSize(); i++) {
@@ -45,11 +45,9 @@ public class StackImpl<E> implements Stack<E>{
 			if (aux == infos.getTail()) {
 				break;
 			}
-			sb.append(" <-> ");
+			sb.append(" \n ");
 			aux = aux.getNext();
 		}
-
-		sb.append("] Bottom");
 
 		return sb.toString();
 	}
